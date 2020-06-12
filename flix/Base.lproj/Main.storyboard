@@ -33,7 +33,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R7G-Yd-Yaa">
-                                                    <rect key="frame" x="8" y="8" width="150" height="225"/>
+                                                    <rect key="frame" x="8" y="8" width="150" height="200"/>
+                                                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="HdH-Cg-O7y"/>
                                                         <constraint firstAttribute="height" constant="200" id="hQp-jR-mgQ"/>
@@ -50,7 +51,7 @@
                                                 <constraint firstItem="R7G-Yd-Yaa" firstAttribute="leading" secondItem="gk7-tb-U61" secondAttribute="leading" constant="8" id="AYG-sB-Nu6"/>
                                                 <constraint firstItem="OgH-ra-VLZ" firstAttribute="trailing" secondItem="gk7-tb-U61" secondAttribute="trailingMargin" constant="8" id="K5n-hc-LZl"/>
                                                 <constraint firstItem="OgH-ra-VLZ" firstAttribute="leading" secondItem="R7G-Yd-Yaa" secondAttribute="trailing" constant="8" id="UGr-zd-5Cq"/>
-                                                <constraint firstAttribute="bottom" secondItem="R7G-Yd-Yaa" secondAttribute="bottom" constant="16" id="Y8Z-bp-9vL"/>
+                                                <constraint firstAttribute="bottom" secondItem="R7G-Yd-Yaa" secondAttribute="bottom" priority="250" constant="16" id="Y8Z-bp-9vL"/>
                                                 <constraint firstItem="QRt-kP-nfD" firstAttribute="leading" secondItem="OgH-ra-VLZ" secondAttribute="leading" id="ZRU-tl-fIF"/>
                                                 <constraint firstItem="QRt-kP-nfD" firstAttribute="top" secondItem="OgH-ra-VLZ" secondAttribute="bottom" id="hyN-aL-Prv"/>
                                                 <constraint firstItem="OgH-ra-VLZ" firstAttribute="top" secondItem="R7G-Yd-Yaa" secondAttribute="top" id="iwd-UG-80I"/>
