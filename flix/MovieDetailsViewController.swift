@@ -32,6 +32,7 @@ class MovieDetailsViewController: UIViewController {
         if let posterPath = posterPath {
             let posterURL = URL(string: baseURL + posterPath)!
             posterView.af_setImage(withURL: posterURL)
+            posterView.backgroundColor = nil
         } else {
             posterView.image = nil
         }

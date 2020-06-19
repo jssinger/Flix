@@ -73,5 +73,13 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         cell.layoutIfNeeded()
         return cell
        }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+    }
 
 }

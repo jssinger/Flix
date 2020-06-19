@@ -124,6 +124,7 @@
                                 <rect key="frame" x="20" y="328" width="93" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTz-OS-4FY">
                                 <rect key="frame" x="20" y="478" width="374" height="179"/>
@@ -220,6 +221,7 @@
                                         <size key="customSize" width="150" height="225"/>
                                         <connections>
                                             <outlet property="posterView" destination="528-AQ-YOy" id="9a6-Zu-UmB"/>
+                                            <segue destination="0Nj-qK-muT" kind="show" id="Bcy-fp-xBI"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -263,6 +265,9 @@
             <point key="canvasLocation" x="1002.8985507246377" y="-51.5625"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="91g-1K-9ti"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
