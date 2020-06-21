@@ -14,7 +14,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
     @IBOutlet weak var collectionView: UICollectionView!
     
     var fetchingMore = false
-    let urlBase = "https://api.themoviedb.org/3/movie/297762/similar?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US&page="
+    let urlBase = "https://api.themoviedb.org/3/movie/upcoming?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US&page="
     var pageNum = 1
     var movies = [[String:Any]]()
     
