@@ -12,6 +12,7 @@ import AlamofireImage
 class MovieViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     
     var fetchingMore = false
@@ -86,6 +87,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
     func beginBatchFetch(){
         fetchingMore = true
         pageNum += 1
+        spinner.startAnimating()
         getAllMovies()
     }
     
@@ -110,6 +112,8 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
               // TODO: Reload your table view data
 
            }
+            self.spinner.stopAnimating()
+            self.spinner.hidesWhenStopped = true
             self.fetchingMore = false
         }
         task.resume()

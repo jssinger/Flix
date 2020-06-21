@@ -37,6 +37,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="249" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jSu-Wb-YA4">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="mtA-9d-3Lo">
+                                    <rect key="frame" x="0.0" y="305" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="249" id="y88-i9-tlY" customClass="MovieCell" customModule="flix" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="249"/>
@@ -99,6 +103,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="Sa4-uC-g7x"/>
                     <connections>
+                        <outlet property="spinner" destination="mtA-9d-3Lo" id="KQE-zX-1Fo"/>
                         <outlet property="tableView" destination="jSu-Wb-YA4" id="50L-32-DOr"/>
                     </connections>
                 </viewController>
