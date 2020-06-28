@@ -13,6 +13,7 @@ The following functionality is complete:
 * [X] User can view the app on various device sizes and orientations.
 * [X] User can view upcoming movies
 * [X] App supports infinite scrolling on both the now playing and upcoming movies pages
+* [X] App displays running TV shows
 
 
 ## License
